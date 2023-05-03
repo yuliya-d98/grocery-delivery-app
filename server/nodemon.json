@@ -1,5 +1,5 @@
 {
-  "watch": ["src"],
+  "watch": ["src", ".env.development", ".env.production"],
   "ext": ".ts,.js",
   "ignore": [],
   "exec": "npx ts-node ./src/main.ts"
