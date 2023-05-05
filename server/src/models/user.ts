@@ -9,6 +9,7 @@ const user = new Schema({
   isAdmin: { type: Boolean, default: false },
   favourites: [{ type: mongoose.Types.ObjectId, ref: "Product" }],
   basket: [{ type: mongoose.Types.ObjectId, ref: "Product" }],
+  reviews: [{ type: mongoose.Types.ObjectId, ref: "Review" }],
 });
 
 export default model("User", user);
