@@ -1,1 +1,35 @@
-<p>app-header works!</p>
+<div class="app-header">
+  <div class="container app-header__container">
+    <a routerLink="/">Mall</a>
+    <div class="app-header__navigation">
+      <button
+        mat-flat-button
+        color="primary"
+        class="app-header__navigation_btn"
+      >
+        <mat-icon aria-hidden="false">person_outline</mat-icon>
+        Войти
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        class="app-header__navigation_btn"
+        matBadge="25"
+        matBadgeColor="warn"
+      >
+        <mat-icon aria-hidden="false">favorite_border</mat-icon>
+        Избранное
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        class="app-header__navigation_btn"
+        matBadge="25"
+        matBadgeColor="warn"
+      >
+        <mat-icon aria-hidden="false">shopping_cart</mat-icon>
+        Корзина
+      </button>
+    </div>
+  </div>
+</div>
