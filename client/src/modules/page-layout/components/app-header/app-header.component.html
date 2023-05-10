@@ -1,17 +1,16 @@
-<div class="app-header mat-app-background">
+<div class="app-header">
   <div class="container app-header__container">
-    <a routerLink="/">Mall</a>
+    <a mat-button routerLink="/">Mall</a>
     <div class="app-header__navigation">
-      <button
-        mat-flat-button
-        color="primary"
-        class="app-header__navigation_btn"
-      >
+      <mat-slide-toggle color="primary" [checked]="isDarkMode" [(ngModel)]="isDarkMode" (ngModelChange)="changeMode()">
+        Ночной режим
+      </mat-slide-toggle>
+      <button mat-flat-button color="primary" class="app-header__navigation_btn">
         <mat-icon aria-hidden="false">person_outline</mat-icon>
         Войти
       </button>
       <button
-        mat-flat-button
+        mat-stroked-button
         color="primary"
         class="app-header__navigation_btn"
         matBadge="15"
@@ -21,7 +20,7 @@
         Избранное
       </button>
       <button
-        mat-flat-button
+        mat-stroked-button
         color="primary"
         class="app-header__navigation_btn"
         matBadge="25"

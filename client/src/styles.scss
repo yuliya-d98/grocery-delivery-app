@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theming";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .container {
   width: 100%;
@@ -10,23 +17,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 @media (min-width: 360px) {
-
 }
 
 @media (min-width: 576px) {
-
 }
-
 
 @media (min-width: 768px) {
-
 }
-
 
 @media (min-width: 992px) {
-
 }
-
 
 @media (min-width: 1200px) {
   .container {
@@ -39,4 +39,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 1400px;
   }
 }
-

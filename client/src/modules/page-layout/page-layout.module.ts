@@ -7,6 +7,8 @@ import { PageLayoutRoutingModule } from "./page-layout-routing.module";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatBadgeModule } from "@angular/material/badge";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppMainComponent, AppHeaderComponent, AppFooterComponent],
@@ -16,6 +18,8 @@ import { MatBadgeModule } from "@angular/material/badge";
     MatIconModule,
     MatButtonModule,
     MatBadgeModule,
+    MatSlideToggleModule,
+    FormsModule,
   ],
 })
 export class PageLayoutModule {}
