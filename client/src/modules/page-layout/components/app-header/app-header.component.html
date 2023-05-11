@@ -1,16 +1,17 @@
-<div class="app-header">
-  <div class="container app-header__container">
+<mat-toolbar color="accent" class="app-header">
+  <mat-toolbar-row class="container app-header__container">
     <a mat-button routerLink="/">Mall</a>
     <div class="app-header__navigation">
       <mat-slide-toggle color="primary" [checked]="isDarkMode" [(ngModel)]="isDarkMode" (ngModelChange)="changeMode()">
         Ночной режим
       </mat-slide-toggle>
-      <button mat-flat-button color="primary" class="app-header__navigation_btn">
+      <button mat-flat-button color="primary" class="app-header__navigation_btn" (click)="openLoginModal()">
         <mat-icon aria-hidden="false">person_outline</mat-icon>
         Войти
       </button>
-      <button
+      <a
         mat-stroked-button
+        routerLink="/favourites"
         color="primary"
         class="app-header__navigation_btn"
         matBadge="15"
@@ -18,7 +19,7 @@
       >
         <mat-icon aria-hidden="false">favorite_border</mat-icon>
         Избранное
-      </button>
+      </a>
       <button
         mat-stroked-button
         color="primary"
@@ -30,5 +31,5 @@
         Корзина
       </button>
     </div>
-  </div>
-</div>
+  </mat-toolbar-row>
+</mat-toolbar>

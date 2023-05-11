@@ -1,0 +1,13 @@
+.login-modal {
+  width: 100%;
+
+  form {
+    padding: 16px;
+  }
+
+  ::ng-deep {
+    mat-form-field {
+      width: 100%;
+    }
+  }
+}
